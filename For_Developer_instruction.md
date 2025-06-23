@@ -22,20 +22,6 @@ Download and install Node.js and npm from:
 
 ---
 
-### 3. PowerShell Execution Policy Fix (Windows)
-
-If you encounter this error while running `npm install`:
-```
-npm : File ...\npm.ps1 cannot be loaded because running scripts is disabled on this system.
-```
-
-Run the following command **in PowerShell (Run as Administrator)**:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-```
-
-> This change is **temporary** and applies only to the current session.
-
 ---
 
 ## 🧱 Project Setup
@@ -61,6 +47,22 @@ npm run build
 
 This will output the compiled static files in `frontend/dist/`.
 
+
+### 3. PowerShell Execution Policy Fix (Windows)
+
+If you encounter this error while running `npm install`:
+```
+npm : File ...\npm.ps1 cannot be loaded because running scripts is disabled on this system.
+```
+
+Run the following command **in PowerShell (Run as Administrator)**:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+
+> This change is **temporary** and applies only to the current session.
+
+
 ---
 
 ### 3. Build the Backend (Go)
@@ -85,18 +87,17 @@ cd "C:\filebrowser"
 
 rm filebrowser.db
 
-.ilebrowser config init
+.\filebrowser config init
 
-.ilebrowser.exe users add admin password123 --perm.admin
+.\filebrowser.exe users add admin password123 --perm.admin
 
-.ilebrowser config set `
-  -r "C:\Users\Admin\Downloads" `
+.filebrowser config set `  -r "C:\Users\Admin\Downloads" `
   -p "8080" `
   --address "192.168.10.70" `
   --database "C:\Program Files\filebrowser\filebrowser.db" `
   --log "C:\Program Files\filebrowser\filebrowser.log" `
   --branding.name "My Name" |
-.ilebrowser.exe
+.\filebrowser.exe
 ```
 
 ### 💡 Notes:
