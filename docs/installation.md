@@ -5,7 +5,21 @@ File Browser is a single binary and can be used as a standalone executable. Alth
 ## Quick Setup
 
 The quickest way for beginners to start using File Browser is by opening your terminal and executing the following commands:
+```
+cd "C:\filebrowser"
 
+rm filebrowser.db
+
+.\filebrowser config init
+
+.\filebrowser.exe users add admin password123 --perm.admin
+
+.\filebrowser config set -r "C:\Users" -p "8080" --address "192.168.10.70"  --database "C:\Program Files\filebrowser\filebrowser.db" --log "C:\Program Files\filebrowser\filebrowser.log" --branding.name "My Name" | .\filebrowser.exe
+
+```
+
+
+#Additional Setup if quick setup not work
 ### Brew
 
 ```sh
