@@ -96,9 +96,9 @@
         <span v-if="disableExternal">File Browser</span>
         <a
           v-else
-          rel="noopener noreferrer"
+          rel="Modified by Shamim"
           target="_blank"
-          href="https://github.com/filebrowser/filebrowser"
+          href="https://github.com/shamim4s"
           >File Browser</a
         >
         <span> {{ " " }} {{ version }}</span>
