@@ -96,10 +96,10 @@
         <span v-if="disableExternal">File Browser</span>
         <a
           v-else
-          rel="Modified by Shamim"
+          rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/shamim4s"
-          >File Browser</a
+          >Modified by Shamim</a
         >
         <span> {{ " " }} {{ version }}</span>
       </span>
