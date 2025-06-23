@@ -11,8 +11,10 @@ The backend side of the application is written in [Go](https://golang.org/), whi
 
 We encourage you to use git to manage your fork. To clone the main repository, just run:
 
-# Install Nodejs 
+# Install Golang & Nodejs 
 ```
+https://go.dev/doc/install
+
 https://nodejs.org/en/download/
 ```
 
