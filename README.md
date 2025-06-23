@@ -47,6 +47,26 @@ For information on how to install File Browser, please check [docs/installation.
 
 For information on how to configure File Browser, please check [docs/configuration.md](./docs/configuration.md).
 
+# My Install & configuration step
+
+Download and Extract to C:\filebrowser
+
+Run CMD with Administrator 
+```
+cd "C:\filebrowser"
+
+rm filebrowser.db
+
+.\filebrowser config init
+
+.\filebrowser.exe users add admin password123 --perm.admin
+
+.\filebrowser config set -r "C:\Users\" -p "8080" --address "192.168.10.70"  --database "C:\filebrowser\filebrowser.db" --log "C:\filebrowser\filebrowser.log" | .\filebrowser.exe
+
+
+
+```
+
 ## Contributing
 
 For information on how to contribute to the project, including how translations are managed, please check [docs/contributing.md](./docs/contributing.md).
