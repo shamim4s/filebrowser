@@ -25,6 +25,9 @@ We are using [Node.js](https://nodejs.org/en/) on the frontend to manage the bui
 # From the root of the repo, go to frontend/
 cd frontend
 
+# Install pnpm
+winget install -e --id pnpm.pnpm
+
 # Install the dependencies
 pnpm install
 
