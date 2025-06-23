@@ -11,6 +11,11 @@ The backend side of the application is written in [Go](https://golang.org/), whi
 
 We encourage you to use git to manage your fork. To clone the main repository, just run:
 
+# Install Nodejs 
+```
+https://nodejs.org/en/download/
+```
+
 ```bash
 git clone https://github.com/filebrowser/filebrowser
 ```
