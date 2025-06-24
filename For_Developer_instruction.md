@@ -92,8 +92,7 @@ del filebrowser.db
 .\filebrowser.exe users add admin password123 --perm.admin
 
 
-.\filebrowser config set -r "C:\Users\" -p "8080" --address "192.168.10.70" --database "C:\filebrowser\filebrowser.db" --log "C:\filebrowser\filebrowser.log" --branding.name "My Name" --disable-thumbnails --disable-preview-resize --cache-dir="" | .\filebrowser.exe
-```
+filebrowser config set -r "C:\Users" -p "8080" --address "192.168.1.117" --branding.name "my name" --database "e:\filebrowser\filebrowser.db" --log "e:\filebrowser\filebrowser.log" --disable-thumbnails --branding.files "e:\filebrowser" --disable-preview-resize --cache-dir="" | filebrowser.exe```
 
 ### 💡 Notes:
 - `-r` is the root directory to serve
