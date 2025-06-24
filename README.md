@@ -51,7 +51,7 @@ Run CMD with Administrator
 ```
 cd "C:\filebrowser"
 
-rm filebrowser.db
+del filebrowser.db
 
 .\filebrowser config init
 
