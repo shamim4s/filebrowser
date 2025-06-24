@@ -57,7 +57,7 @@ rm filebrowser.db
 
 .\filebrowser.exe users add admin password123 --perm.admin
 
-.\filebrowser config set -r "C:\Users\Admin\Downloads" -p "8080" --address "192.168.10.70"  --database "C:\Program Files\filebrowser\filebrowser.db" --log "C:\Program Files\filebrowser\filebrowser.log" --branding.name "My Name" | .\filebrowser.exe
+.\filebrowser config set -r "C:\Users\Admin\Downloads" -p "8080" --address "192.168.10.70" --database "C:\Program Files\filebrowser\filebrowser.db" --log "C:\Program Files\filebrowser\filebrowser.log" --branding.name "My Name" --disable-thumbnails --disable-preview-resize --cache-dir="" | .\filebrowser.exe
 
 ```
 
