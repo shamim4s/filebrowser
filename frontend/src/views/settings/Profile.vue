@@ -34,11 +34,11 @@
             :value="t('buttons.update')"
           />
         </div>
-      </form>
+      </form> 
     </div>
 
     <div class="column">
-      <form
+    <!--  <form
         class="card"
         v-if="!authStore.user?.lockPassword"
         @submit="updatePassword"
@@ -72,7 +72,7 @@
             :value="t('buttons.update')"
           />
         </div>
-      </form>
+      </form> -->
     </div>
   </div>
 </template>
