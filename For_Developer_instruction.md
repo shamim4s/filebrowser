@@ -85,13 +85,14 @@ Once build is complete, run the following setup in **Command Prompt** or **Power
 ```powershell
 cd "C:\filebrowser"
 
-rm filebrowser.db
+del filebrowser.db
 
 .\filebrowser config init
 
 .\filebrowser.exe users add admin password123 --perm.admin
 
-filebrowser config set  -r "C:\Users" -p "8080"  --address "192.168.10.70"  --database "C:\filebrowser\filebrowser.db" --log "C:\filebrowser\filebrowser.log" --branding.name "My Name" | filebrowser.exe
+
+.\filebrowser config set -r "C:\Users\" -p "8080" --address "192.168.10.70" --database "C:\filebrowser\filebrowser.db" --log "C:\filebrowser\filebrowser.log" --branding.name "My Name" --disable-thumbnails --disable-preview-resize --cache-dir="" | .\filebrowser.exe
 ```
 
 ### 💡 Notes:
