@@ -62,7 +62,7 @@ rm filebrowser.db
 ```
 
 ## Contributing
-For Developer installation Guide 
+For Developer installation Guide by Shamim
 https://github.com/shamim4s/filebrowser/blob/master/For_Developer_instruction.md
 
 For information on how to contribute to the project, including how translations are managed, please check [docs/contributing.md](./docs/contributing.md).
