@@ -121,8 +121,6 @@ Login using:
 REM Define path variables
 set FILEBROWSER_PATH=C:\windows\filebrowser
 set DATA_PATH=c:\users\public
-
-REM Define additional variables
 set ADDRESS=192.168.10.65
 set PORT=8080
 set BRANDING_NAME=Shamim4s file browser
