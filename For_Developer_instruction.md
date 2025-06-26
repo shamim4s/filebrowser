@@ -71,7 +71,7 @@ From the **project root**, run:
 
 ```bash
 cd ..
-go build -o filebrowser .
+go build -o filebrowser.exe .
 ```
 
 This compiles the backend and generates the `filebrowser` binary in the root directory.
@@ -87,7 +87,7 @@ cd "C:\filebrowser"
 
 del filebrowser.db
 
-.\filebrowser config init
+.\filebrowser.exe config init
 
 .\filebrowser.exe users add admin password123 --perm.admin
 
