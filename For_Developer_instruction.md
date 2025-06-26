@@ -114,4 +114,26 @@ Login using:
 - **Username:** `admin`
 - **Password:** `password123`
 
-Happy hacking!
+#Create a bat/cmd file to run this without write command everytime
+```
+@echo off
+
+REM Define path variables
+set FILEBROWSER_PATH=C:\windows\filebrowser
+set DATA_PATH=c:\users\public
+
+REM Define additional variables
+set ADDRESS=192.168.10.65
+set PORT=8080
+set BRANDING_NAME=Shamim4s file browser
+
+cd /d "%FILEBROWSER_PATH%"
+
+REM Execute the command with variables
+"%FILEBROWSER_PATH%\filebrowser.exe" config set -r "%DATA_PATH%" -p "%PORT%" --address "%ADDRESS%" --branding.name "%BRANDING_NAME%" --database "%FILEBROWSER_PATH%\filebrowser.db" --log "%FILEBROWSER_PATH%\filebrowser.log" --disable-thumbnails --branding.files "%FILEBROWSER_PATH%" --disable-preview-resize --cache-dir="" | "%FILEBROWSER_PATH%\filebrowser.exe"
+
+```
+
+
+
+Happy Life!
